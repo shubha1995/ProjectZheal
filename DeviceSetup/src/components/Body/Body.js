@@ -23,6 +23,7 @@ const Body = props => {
       <Image style={styles.deviceSetupImage} source={props.image} />
       <TouchableOpacity>
         <Button
+          isPrimary= 'true'
           image={require('../../assets/images/Rem42logo.png')}
           title={'Rem-42'}
           onPress= {navigatetodeviceposition} 

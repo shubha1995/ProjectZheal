@@ -10,6 +10,8 @@ const Button = props => {
   return (
     <View>
       <TouchableOpacity onPress={() => {
+        if(props.isPrimary) 
+        
         setIsSelected(true);
         props.onPress();
       }} >
