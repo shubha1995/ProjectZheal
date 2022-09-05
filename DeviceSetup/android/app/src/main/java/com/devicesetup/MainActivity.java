@@ -14,6 +14,7 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "DeviceSetup";
   }
+  
 
   /**
    * Returns the instance of the {@link ReactActivityDelegate}. There the RootView is created and

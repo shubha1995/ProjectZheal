@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   /*Left arrow*/
   arrow: {
     top: 35,
-    left: 25,
+    left: 16,
   },
   skip: {
     top: 35,
@@ -36,41 +36,50 @@ const styles = StyleSheet.create({
   },
   /*body text2*/
 
-  setup: {
+  setupText: {
     color: '#BCBEC0',
     fontSize: 16,
     lineHeight: 24,
     letterSpacing: 0.8,
   },
   /*body text3*/
-  continue: {
+  continueText: {
     color: '#BCBEC0',
     fontSize: 14,
     lineHeight: 24,
     letterSpacing: 0.5,
   },
   /*body image*/
-  device1: {
-    left: 20,
+  deviceSetupImage: {
+    left: 32,
   },
-
+  
   /*button*/
   button: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#282828',
     height: 48,
+    paddingLeft: 48,
+  },
+  buttonPressed : {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#282828',
+    height: 48,
+    paddingLeft: 48,
+    borderColor: 'red',
+    borderWidth: 1
   },
   buttonText: {
     color: 'white',
-    left: 85,
     fontsize: 14,
     fontweight: 500,
     lineheight: 16,
     letterspacing: 1.25,
   },
   logo: {
-    left: 25,
+    marginRight: 16,
   },
    /* Smart watches body*/
    smartwatchesbody: {
@@ -95,13 +104,19 @@ const styles = StyleSheet.create({
   },
 /* Device position body */
   devicebody: {
-    margin: 50,
     flex: 1,
     flexDirection: 'column',
     justifyContent: 'space-evenly',
+    alignItems: 'center',
+    paddingLeft: 16,
+    paddingRight: 16,
+  },
+  textSection: {
+    alignItems: 'center',
+    marginLeft: 64,
+    marginRight: 64,
   },
   position: {
-    left: "15%",
     color: 'white',
     fontSize: 25,
     lineHeight: 28,
@@ -109,15 +124,13 @@ const styles = StyleSheet.create({
   },
   devicePosition: {
     color: '#BCBEC0',
-    left: 5,
+    textAlign: 'center',
     fontSize: 19,
     lineHeight: 24,
     letterSpacing: 0.5,
   },
   positiontext: {
     color: '#BCBEC0',
-    left: 5,
-    top: -46,
     fontSize: 19,
     lineHeight: 29,
     letterSpacing: 0.5,
@@ -127,7 +140,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#DA2128',
+    justifyContent: 'center',
     height: 48,
+    width: 160,
   },
 });
 

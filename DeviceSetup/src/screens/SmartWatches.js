@@ -6,6 +6,7 @@ import SmartwatchesBody from '../components/Body/SmartwatchesBody';
 
 
 const SmartWatches = () => {
+
   return (
     <View style= {styles.device}>
     <Arrow image = {require('../assets/images/Leftarrow.png')}/>
