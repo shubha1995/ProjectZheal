@@ -6,8 +6,10 @@ import {POSITION} from '../assets/image';
 
 const SmartWatches = () => {
   return (
-    <View style={styles.device}>
-      <DevicePositionedBody devicePositionImage={<POSITION height={250} />} />
+    <View style={styles.container}>
+      <View style={styles.device}>
+        <DevicePositionedBody devicePositionImage={<POSITION height={250} />} />
+      </View>
     </View>
   );
 };

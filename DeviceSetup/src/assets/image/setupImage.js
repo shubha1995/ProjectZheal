@@ -28,6 +28,4 @@ var xml = `
 
 `;
 
-export default props => (
-  <SvgXml xml={xml} height={props.height} top={props.top} />
-);
+export default props => <SvgXml xml={xml} height={props.height} />;

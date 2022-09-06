@@ -2,15 +2,24 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   /*Home Screen*/
-  device: {
+
+  container: {
     backgroundColor: 'black',
     height: '100%',
   },
+  smartWatchesbody: {
+    height: '100%',
+
+  },
+  device: {
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   /*Left arrow*/
   arrow: {
-    top: 35,
+    top: 16,
     left: 16,
-
   },
   skip: {
     top: 35,
@@ -27,7 +36,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-evenly',
   },
- 
+
   /*body text1*/
   title: {
     color: 'white',
@@ -52,9 +61,9 @@ const styles = StyleSheet.create({
   },
   /*body image*/
   deviceSetupImage: {
-   
+    alignSelf: 'center'
   },
-  
+
   /*button*/
   button: {
     flexDirection: 'row',
@@ -63,14 +72,14 @@ const styles = StyleSheet.create({
     height: 48,
     paddingLeft: 48,
   },
-  buttonPressed : {
+  buttonPressed: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#282828',
     height: 48,
     paddingLeft: 48,
     borderColor: 'red',
-    borderWidth: 1
+    borderWidth: 1,
   },
   buttonText: {
     color: 'white',
@@ -82,19 +91,19 @@ const styles = StyleSheet.create({
   logo: {
     marginRight: 16,
   },
-   /* Smart watches body*/
-   smartwatchesbody: {
+  /* Smart watches body*/
+  smartwatchesbody: {
     margin: 40,
     flex: 0.7,
     flexDirection: 'column',
     justifyContent: 'space-evenly',
   },
-  /*horizental line*/ 
+  /*horizental line*/
   hrline: {
     borderBottomColor: '#DA2128',
-        borderBottomWidth: 2,
-        width:"50%",
-        top: -15,
+    borderBottomWidth: 2,
+    width: '50%',
+    top: -15,
   },
   watches: {
     color: '#BCBEC0',
@@ -103,7 +112,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.8,
     left: 7,
   },
-/* Device position body */
+  /* Device position body */
   devicebody: {
     flex: 1,
     flexDirection: 'column',
@@ -135,7 +144,6 @@ const styles = StyleSheet.create({
     fontSize: 19,
     lineHeight: 29,
     letterSpacing: 0.5,
-
   },
   Continuebutton: {
     flexDirection: 'row',

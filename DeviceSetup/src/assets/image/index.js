@@ -7,6 +7,7 @@ import FITBITLOGO from './fitbit'
 import AMAZEFIT from './amazefit'
 import AURARING from './aura'
 
+
 export const ARROW = ARROWIMAGE;
 export const SETUP = SETUPIMAGE;
 export const LOGO = REMLOGO;

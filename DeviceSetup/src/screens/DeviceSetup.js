@@ -8,11 +8,16 @@ import {SETUP} from '../assets/image/index';
 
 const DeviceSetup = () => {
   return (
-    <View style={styles.device}>
+    <View style={styles.container}>
       <View style={styles.arrow}>
         <ARROW height={18} />
       </View>
-      <Body image={<SETUP height={262} />} />
+      <View style={styles.device}>
+        <Body
+          style={styles.deviceSetupImage}
+          image={<SETUP style={styles.deviceSetupImage} height={262} />}
+        />
+      </View>
     </View>
   );
 };

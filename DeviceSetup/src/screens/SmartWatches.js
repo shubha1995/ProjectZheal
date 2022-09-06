@@ -6,9 +6,11 @@ import SmartwatchesBody from '../components/body/smartwatchesBody';
 
 const SmartWatches = () => {
   return (
-    <View style={styles.device}>
+    <View style={styles.container}>
       <Arrow image={require('../assets/images/Leftarrow.png')} />
-      <SmartwatchesBody />
+      <View style={styles.smartWatchesbody}>
+        <SmartwatchesBody />
+      </View>
     </View>
   );
 };
