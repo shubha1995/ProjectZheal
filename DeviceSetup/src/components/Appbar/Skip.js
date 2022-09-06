@@ -1,19 +1,13 @@
-import {View, Alert, Text, TouchableOpacity} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import React from 'react';
-import { styles } from '../common/styles';
+import {styles} from '../common/styles';
 
-const Skip = (props) => {
-  const showAlert = () =>{
-    Alert.alert(
-       'This is the skip button'
-    )
- }
+const Skip = props => {
   return (
-    <TouchableOpacity onPress = {showAlert}>
-     <Text style={styles.skip}>{props.title}</Text>
+    <TouchableOpacity>
+      <Text style={styles.skip}>{props.title}</Text>
     </TouchableOpacity>
   );
 };
 
-
-export default Skip
+export default Skip;

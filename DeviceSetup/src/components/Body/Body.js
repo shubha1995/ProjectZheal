@@ -1,16 +1,21 @@
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {styles} from '../common/styles';
-import Title from './Title';
-import Button from './Button';
+import Title from './title';
+import Button from './button';
 import {useNavigation} from '@react-navigation/native';
+import {LOGO} from '../../assets/image';
+import {VECTOR} from '../../assets/image';
 
 const Body = props => {
   const navigation = useNavigation();
   function navigatetodeviceposition() {
-    navigation.navigate('DevicePosition')
-  } 
-  
+    navigation.navigate('DevicePosition');
+  }
+  function navigatetoSmartWatches() {
+    navigation.navigate('SmartWatches');
+  }
+
   return (
     <View style={styles.body}>
       <Title />
@@ -20,18 +25,19 @@ const Body = props => {
       <Text style={styles.continueText}>
         Continuing without device will end up with insuffecient data
       </Text>
-      <Image style={styles.deviceSetupImage} source={props.image} />
+      {props.image}
       <TouchableOpacity>
         <Button
-          isPrimary= 'true'
-          image={require('../../assets/images/Rem42logo.png')}
+          isPrimary="true"
+          logoimage={<LOGO height={20} />}
           title={'Rem-42'}
-          onPress= {navigatetodeviceposition} 
+          onPress={navigatetodeviceposition}
         />
       </TouchableOpacity>
       <Button
-        image={require('../../assets/images/Vector.png')}
+        logoimage={<VECTOR height={20} />}
         title={'Add other device'}
+        onPress={navigatetoSmartWatches}
       />
     </View>
   );

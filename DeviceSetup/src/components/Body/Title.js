@@ -1,6 +1,6 @@
-import {View, Text, } from 'react-native';
+import {View, Text} from 'react-native';
 import React from 'react';
-import { styles } from '../common/styles';
+import {styles} from '../common/styles';
 
 const Title = () => {
   return (
@@ -9,7 +9,5 @@ const Title = () => {
     </View>
   );
 };
-
-
 
 export default Title;

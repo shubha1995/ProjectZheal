@@ -1,20 +1,13 @@
-import {View, Image, TouchableOpacity,} from 'react-native';
+import {Image, TouchableOpacity} from 'react-native';
 import React from 'react';
-import { styles } from '../common/styles';
+import {styles} from '../common/styles';
 
-
-
-const Arrow = (props) => {
-
+const Arrow = props => {
   return (
     <TouchableOpacity>
-      <Image
-        style={styles.arrow}
-        source={props.image}
-      />
+      <Image style={styles.arrow} source={props.image} />
     </TouchableOpacity>
   );
 };
-
 
 export default Arrow;

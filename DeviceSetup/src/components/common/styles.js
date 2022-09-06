@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   arrow: {
     top: 35,
     left: 16,
+
   },
   skip: {
     top: 35,
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
   },
   /*body image*/
   deviceSetupImage: {
-    left: 32,
+   
   },
   
   /*button*/

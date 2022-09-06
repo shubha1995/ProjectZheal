@@ -1,18 +1,15 @@
-import {View, Text, TouchableOpacity,} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
-import { styles } from '../common/styles';
+import {styles} from '../common/styles';
 
-
-const Continuebutton = (props) => {
+const Continuebutton = props => {
   return (
-      <View>
+    <View>
       <TouchableOpacity style={styles.Continuebutton}>
         <Text style={styles.buttonText}>{props.title}</Text>
       </TouchableOpacity>
-      </View>
+    </View>
   );
 };
 
-
-
-export default Continuebutton
+export default Continuebutton;

@@ -1,9 +1,9 @@
 import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
-import Arrow from '../components/Appbar/Arrow';
-import Body from '../components/Body/Body';
+import Arrow from '../components/appbar/arrow';
+import Body from '../components/body/body';
 import {styles} from '../components/common/styles';
-import Skip from '../components/Appbar/Skip';
+import Skip from '../components/appbar/skip';
 
 const DeviceSetup = () => {
   return (
