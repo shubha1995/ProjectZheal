@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
   },
   /*Left arrow*/
   arrow: {
-    top: 16,
-    left: 16,
+    top: 32,
+    left: 32,
   },
   skip: {
     top: 35,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#282828',
     height: 48,
-    paddingLeft: 48,
+    paddingLeft: 40,
   },
   buttonPressed: {
     flexDirection: 'row',
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     letterspacing: 1.25,
   },
   logo: {
-    marginRight: 16,
+    marginRight: 24,
   },
   /* Smart watches body*/
   smartwatchesbody: {
