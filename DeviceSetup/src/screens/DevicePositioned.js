@@ -1,8 +1,8 @@
-import {View} from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
-import {styles} from '../components/common/styles';
+import { styles } from '../components/common/styles';
 import DevicePositionedBody from '../components/body/devicePositionBody';
-import {POSITION} from '../assets/image';
+import { POSITION } from '../assets/image';
 
 const SmartWatches = () => {
   return (

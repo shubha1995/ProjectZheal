@@ -1,6 +1,6 @@
-import {View, Text, Image, TouchableOpacity} from 'react-native';
-import React, {useState} from 'react';
-import {styles} from '../common/styles';
+import { View, Text, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { styles } from '../common/styles';
 
 const Button = props => {
   const [isSelected, setIsSelected] = useState(false);

@@ -1,16 +1,20 @@
-import {View, Text, StyleSheet} from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import React from 'react';
-import Arrow from '../components/appbar/arrow';
-import {styles} from '../components/common/styles';
+import { styles } from '../components/common/styles';
 import SmartwatchesBody from '../components/body/smartwatchesBody';
-import {ARROW} from '../assets/image';
+import { ARROW } from '../assets/image';
+import { useNavigation } from '@react-navigation/native';
 
 const SmartWatches = () => {
+  const navigation = useNavigation();
+  function navigatetoDeviceSetup () {
+    navigation.navigate('Setup');
+  }
   return (
     <View style={styles.container}>
-      <View style={styles.arrow}>
-        <ARROW height={18} />
-      </View>
+      <TouchableOpacity onProgress={navigatetoDeviceSetup} style={styles.arrow} >
+        <ARROW height={32} />
+      </TouchableOpacity>
       <View style={styles.smartWatchesbody}>
         <SmartwatchesBody />
       </View>

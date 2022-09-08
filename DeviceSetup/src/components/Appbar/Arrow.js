@@ -1,10 +1,14 @@
-import {Image, TouchableOpacity} from 'react-native';
+import { Image, TouchableOpacity } from 'react-native';
 import React from 'react';
-import {styles} from '../common/styles';
+import { styles } from '../common/styles';
 
 const Arrow = props => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+      onPress={() => {
+        props.onPress();
+      }}>
+
       <Image style={styles.arrow} source={props.image} />
     </TouchableOpacity>
   );

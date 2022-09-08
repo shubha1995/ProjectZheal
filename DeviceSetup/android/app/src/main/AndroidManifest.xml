@@ -21,6 +21,11 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+        <queries>
+      <intent>
+        <action android:name="android.intent.action.DIAL" />
+      </intent>
+</queries>
       </activity>
     </application>
 </manifest>

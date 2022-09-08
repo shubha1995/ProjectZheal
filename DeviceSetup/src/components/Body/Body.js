@@ -1,18 +1,17 @@
-import {View, Text, TouchableOpacity} from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
-import {styles} from '../common/styles';
+import { styles } from '../common/styles';
 import Title from './title';
 import Button from './button';
-import {useNavigation} from '@react-navigation/native';
-import {LOGO} from '../../assets/image';
-import {VECTOR} from '../../assets/image';
+import { useNavigation } from '@react-navigation/native';
+import { LOGO, VECTOR } from '../../assets/image';
 
 const Body = props => {
   const navigation = useNavigation();
-  function navigatetodeviceposition() {
+  function navigatetodeviceposition () {
     navigation.navigate('DevicePosition');
   }
-  function navigatetoSmartWatches() {
+  function navigatetoSmartWatches () {
     navigation.navigate('SmartWatches');
   }
 

@@ -1,12 +1,13 @@
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 import React from 'react';
-import {styles} from '../common/styles';
+import { styles } from '../common/styles';
 import Title from './title';
 import Button from './button';
-import {AURA, FITBIT} from '../../assets/image';
-import {AMAZE} from '../../assets/image';
+import { AURA, FITBIT, AMAZE } from '../../assets/image';
+
 
 const SmartwatchesBody = props => {
+ 
   return (
     <View style={styles.smartwatchesbody}>
       <Title />
